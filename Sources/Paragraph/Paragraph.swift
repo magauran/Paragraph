@@ -13,7 +13,7 @@ public prefix func §(_ localization: CommentedLoclization) -> String {
 
 public prefix func §(_ localization: DictLocalization) -> String {
     let format = NSLocalizedString(localization.key, comment: localization.comment)
-    return String(format: format, locale: .current, arguments: localization.arguments)
+    return String(format: format, locale: .current, arguments: localization.arguments.map { $0.intValue })
 }
 
 // MARK: - Protocols
@@ -26,7 +26,7 @@ public protocol CommentedLoclization: AnyLocalization {
 }
 
 public protocol DictLocalization: CommentedLoclization {
-    var arguments: [CVarArg] { get }
+    var arguments: [ArgumentType] { get }
 }
 
 // MARK: - Implementation
@@ -38,11 +38,37 @@ public struct CommentedL10n: CommentedLoclization {
 public struct DictL10n: DictLocalization {
     public let key: String
     public let comment: String
-    public let arguments: [CVarArg]
+    public let arguments: [ArgumentType]
 }
 
 extension String: AnyLocalization {
     public var key: String {
         return self
+    }
+}
+
+public enum Gender: Int {
+    case male = 0, female, neutral
+}
+
+public protocol ArgumentType {
+    var intValue: Int { get }
+}
+
+extension Int: ArgumentType {
+    public var intValue: Int {
+        return self
+    }
+}
+
+extension UInt: ArgumentType {
+    public var intValue: Int {
+        return Int(truncatingIfNeeded: self)
+    }
+}
+
+extension Gender: ArgumentType {
+    public var intValue: Int {
+        return self.rawValue
     }
 }
