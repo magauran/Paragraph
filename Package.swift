@@ -4,6 +4,9 @@ import PackageDescription
 
 let package = Package(
     name: "Paragraph",
+    platforms: [
+      .iOS(.v9)
+    ],
     products: [
         .library(
             name: "Paragraph",
