@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>days</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@days@</string>
+		<key>days</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>zero</key>
+			<string>%d дней</string>
+			<key>one</key>
+			<string>%d день</string>
+			<key>two</key>
+			<string>%d дня</string>
+			<key>few</key>
+			<string>%d дня</string>
+			<key>many</key>
+			<string>%d дней</string>
+			<key>other</key>
+			<string>%d дней</string>
+		</dict>
+	</dict>
+	<key>birthday</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>Поздравить %#@pronoun@ с днём рождения</string>
+		<key>pronoun</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringGenderRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>0</key>
+			<string>его</string>
+			<key>1</key>
+			<string>её</string>
+			<key>2</key>
+			<string>его</string>
+		</dict>
+	</dict>
+	<key>width</key>
+	<dict>
+		<key>NSStringVariableWidthRuleType</key>
+		<dict>
+			<key>1</key>
+			<string>маленький</string>
+			<key>5</key>
+			<string>средний</string>
+			<key>20</key>
+			<string>большой</string>
+		</dict>
+	</dict>
+	<key>call</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@pronoun@ мне %#@times@ сегодня</string>
+		<key>pronoun</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringGenderRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>0</key>
+			<string>Он звонил</string>
+			<key>1</key>
+			<string>Она звонила</string>
+			<key>2</key>
+			<string>Он звонил</string>
+		</dict>
+		<key>times</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>zero</key>
+			<string>%d раз</string>
+			<key>one</key>
+			<string>%d раз</string>
+			<key>two</key>
+			<string>%d раза</string>
+			<key>few</key>
+			<string>%d раза</string>
+			<key>many</key>
+			<string>%d раз</string>
+			<key>other</key>
+			<string>%d раз</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

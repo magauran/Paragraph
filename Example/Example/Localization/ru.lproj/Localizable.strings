@@ -1,0 +1,9 @@
+/* 
+  Localizable.strings
+  Example
+
+  Created by Alexey Salangin on 10/12/19.
+  Copyright © 2019 Alexey Salangin. All rights reserved.
+*/
+
+"Main.helloText" = "Привет мир!";

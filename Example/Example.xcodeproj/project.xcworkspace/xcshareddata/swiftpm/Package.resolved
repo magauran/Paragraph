@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Paragraph",
+        "repositoryURL": "https://github.com/magauran/Paragraph",
+        "state": {
+          "branch": "master",
+          "revision": "e810e787d809870f6e0be0d7b07cf0b557a42c80",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}

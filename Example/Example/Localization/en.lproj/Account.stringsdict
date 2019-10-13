@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>days</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@days@</string>
+		<key>days</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>zero</key>
+			<string>%d days</string>
+			<key>one</key>
+			<string>%d day</string>
+			<key>two</key>
+			<string>%d days</string>
+			<key>few</key>
+			<string>%d days</string>
+			<key>many</key>
+			<string>%d days</string>
+			<key>other</key>
+			<string>%d days</string>
+		</dict>
+	</dict>
+	<key>birthday</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>Congratulate to %#@pronoun@ birthday</string>
+		<key>pronoun</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringGenderRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>0</key>
+			<string>his</string>
+			<key>1</key>
+			<string>her</string>
+			<key>2</key>
+			<string>their</string>
+		</dict>
+	</dict>
+	<key>width</key>
+	<dict>
+		<key>NSStringVariableWidthRuleType</key>
+		<dict>
+			<key>1</key>
+			<string>small</string>
+			<key>5</key>
+			<string>medium</string>
+			<key>20</key>
+			<string>large</string>
+		</dict>
+	</dict>
+	<key>call</key>
+	<dict>
+		<key>NSStringLocalizedFormatKey</key>
+		<string>%#@pronoun@ called me %#@times@ today</string>
+		<key>pronoun</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringGenderRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>0</key>
+			<string>He</string>
+			<key>1</key>
+			<string>She</string>
+			<key>2</key>
+			<string>They</string>
+		</dict>
+		<key>times</key>
+		<dict>
+			<key>NSStringFormatSpecTypeKey</key>
+			<string>NSStringPluralRuleType</string>
+			<key>NSStringFormatValueTypeKey</key>
+			<string>d</string>
+			<key>zero</key>
+			<string>%d times</string>
+			<key>one</key>
+			<string>%d time</string>
+			<key>two</key>
+			<string>%d times</string>
+			<key>few</key>
+			<string>%d times</string>
+			<key>many</key>
+			<string>%d times</string>
+			<key>other</key>
+			<string>%d times</string>
+		</dict>
+	</dict>
+</dict>
+</plist>
