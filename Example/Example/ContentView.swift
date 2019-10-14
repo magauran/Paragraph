@@ -18,6 +18,7 @@ struct ContentView: View {
             Text(§L10n.Account.width(7))
             Text(§L10n.Main.settingsButton)
             Text(§L10n.Account.call(.male, 10))
+            Text(§L10n.Main.device)
         }
     }
 }

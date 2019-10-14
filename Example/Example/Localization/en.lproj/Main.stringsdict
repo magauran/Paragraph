@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>device</key>
+    <dict>
+        <key>NSStringDeviceSpecificRuleType</key>
+        <dict>
+            <key>appletv</key>
+            <string>Apple TV</string>
+            <key>applewatch</key>
+            <string>Apple Watch</string>
+            <key>ipad</key>
+            <string>iPad</string>
+            <key>iphone</key>
+            <string>iPhone</string>
+            <key>ipod</key>
+            <string>iPod</string>
+            <key>mac</key>
+            <string>Mac</string>
+        </dict>
+    </dict>
+</dict>
+</plist>

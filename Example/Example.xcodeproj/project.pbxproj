@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		882A9CD723542BEA0045EE4C /* Main.stringsdict in Resources */ = {isa = PBXBuildFile; fileRef = 882A9CD923542BEA0045EE4C /* Main.stringsdict */; };
 		8895EA9723525EF0007BC0CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8895EA9623525EF0007BC0CE /* AppDelegate.swift */; };
 		8895EA9923525EF0007BC0CE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8895EA9823525EF0007BC0CE /* SceneDelegate.swift */; };
 		8895EA9B23525EF0007BC0CE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8895EA9A23525EF0007BC0CE /* ContentView.swift */; };
@@ -21,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		882A9CD823542BEA0045EE4C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = en; path = en.lproj/Main.stringsdict; sourceTree = "<group>"; };
+		882A9CDA23542BF00045EE4C /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.stringsdict; name = ru; path = ru.lproj/Main.stringsdict; sourceTree = "<group>"; };
 		8895EA9323525EF0007BC0CE /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8895EA9623525EF0007BC0CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8895EA9823525EF0007BC0CE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -94,6 +97,7 @@
 			children = (
 				8895EAAA235260EE007BC0CE /* L10n.swift */,
 				8895EAC123529469007BC0CE /* Main.strings */,
+				882A9CD923542BEA0045EE4C /* Main.stringsdict */,
 				8895EAD12352AB8B007BC0CE /* Account.stringsdict */,
 				8895EAB023526187007BC0CE /* Localizable.strings */,
 			);
@@ -169,6 +173,7 @@
 				8895EAA323525EF3007BC0CE /* LaunchScreen.storyboard in Resources */,
 				8895EAAE23526187007BC0CE /* Localizable.strings in Resources */,
 				8895EACF2352AB8B007BC0CE /* Account.stringsdict in Resources */,
+				882A9CD723542BEA0045EE4C /* Main.stringsdict in Resources */,
 				8895EAA023525EF3007BC0CE /* Preview Assets.xcassets in Resources */,
 				8895EABF23529469007BC0CE /* Main.strings in Resources */,
 				8895EA9D23525EF3007BC0CE /* Assets.xcassets in Resources */,
@@ -192,6 +197,15 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		882A9CD923542BEA0045EE4C /* Main.stringsdict */ = {
+			isa = PBXVariantGroup;
+			children = (
+				882A9CD823542BEA0045EE4C /* en */,
+				882A9CDA23542BF00045EE4C /* ru */,
+			);
+			name = Main.stringsdict;
+			sourceTree = "<group>";
+		};
 		8895EAA123525EF3007BC0CE /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

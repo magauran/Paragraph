@@ -12,6 +12,7 @@ enum L10n {
     enum Main {
         static let settingsButton = SimpleL10n(key: "Main.settingsButton", table: "Main", comment: "Title of the settings button")
         static let helloText = "Main.helloText"
+        static let device = DictL10n(key: "device", arguments: [], table: "Main", comment: "")
     }
 
     enum Account {
