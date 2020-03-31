@@ -76,3 +76,25 @@ public struct FittingL10n: FittingLocalization {
         self.width = width
     }
 }
+
+public struct FormatL10n: FormatLocalization {
+    public let key: String
+    public let arguments: [CVarArg]
+    public let table: String?
+    public let bundle: Bundle
+    public let comment: String
+
+    public init(
+        key: String,
+        arguments: [CVarArg],
+        table: String? = nil,
+        bundle: Bundle = .main,
+        comment: String
+    ) {
+        self.key = key
+        self.arguments = arguments
+        self.table = table
+        self.bundle = bundle
+        self.comment = comment
+    }
+}

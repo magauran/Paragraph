@@ -43,6 +43,21 @@ public prefix func §(_ localization: FittingLocalization) -> String {
     return string.variantFittingPresentationWidth(localization.width)
 }
 
+public prefix func §(_ localization: FormatLocalization) -> String {
+   let format = NSLocalizedString(
+        localization.key,
+        tableName: localization.table,
+        bundle: localization.bundle,
+        comment: localization.comment
+    )
+
+    return String(
+        format: format,
+        locale: .current,
+        arguments: localization.arguments
+    )
+}
+
 // MARK: - Protocols
 public protocol AnyLocalization {
     var key: String { get }
@@ -57,4 +72,8 @@ public protocol DictLocalization: AnyLocalization {
 
 public protocol FittingLocalization: AnyLocalization {
     var width: Int { get }
+}
+
+public protocol FormatLocalization: AnyLocalization {
+    var arguments: [CVarArg] { get }
 }
